@@ -41,7 +41,7 @@
 		<h1>Sequência de Fibonacci<br></h1>
 
 		<form action="php_fibonacci.php" method="POST" style="border: 0px">
-			<p>Quantidade: <input type="text" name="quantidade" style="width: 100px" value="<?php echo $quantidade; ?>"></p>
+			<p>Quantidade: <input type="text" name="quantidade" style="width: 100px" value="<?php echo $quantidade; ?>" autofocus></p>
 			<p><input type="submit" name="gerar" value="Gerar"></p>
 		</form>
 
