@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
-		<title>Sequência de Fibonacci</title>
+		<title>SequÃªncia de Fibonacci</title>
  		<link rel="stylesheet" href="php_fibonacci.css"/>
 		<link rel="icon" type="image/png" href="php_fibonacci.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<?php
-			header( "Content-Type: text/html; charset=ISO-8859-1", true);
+			// header( "Content-Type: text/html; charset=ISO-8859-1", true);
+		header( "Content-Type: text/html; charset=UTF-8", true);
 			date_default_timezone_set ("America/Sao_Paulo");
 
 			$resultado = '';
@@ -18,7 +19,7 @@
 			{
 				$quantidade = $_POST["quantidade"];
 				$quantidade_i = intval( $quantidade);
-				// mágica
+				// mÃ¡gica
 				$primeiro = 0;
 				$segundo = 1;
 				if( $quantidade_i > 0)
@@ -38,7 +39,7 @@
 				}
 			}
 		?>
-		<h1>Sequência de Fibonacci<br></h1>
+		<h1>SequÃªncia de Fibonacci<br></h1>
 
 		<form action="php_fibonacci.php" method="POST" style="border: 0px">
 			<p>Quantidade: <input type="number" name="quantidade" style="width: 100px" value="<?php echo htmlspecialchars( $quantidade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" autofocus></p>
@@ -46,7 +47,7 @@
 		</form>
 
 		<br><p>Resultado: <?php echo $resultado; ?></p><br><br>
-		<p><a href="https://github.com/jacknpoe/php_fibonacci">Repositório no GitHub</a></p><br><br>
+		<p><a href="https://github.com/jacknpoe/php_fibonacci">RepositÃ³rio no GitHub</a></p><br><br>
 		<form action="index.html" method="POST" style="border: 0px">
 			<p><input type="submit" name="voltar" value="Voltar"></p>
 		</form>
